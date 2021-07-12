@@ -7,21 +7,18 @@
 <body>
 
 <fieldset>
-    <h2>Calculator</h2>
-    <input type="number" id="firstNum">
+    <h2>Calculator (4-function-used)</h2>
+    <label for="firstNum">Số thứ nhất</label> <br>
+    <input type="number" id="firstNum"> <br><br>
+    <label for="secondNum">Số thứ hai</label> <br>
     <input type="number" id="secondNum">
     <br><br>
-    <button id="add" onclick="add()">Addition(+)</button>
-    <button id="sub" onclick="subtract()">Subtraction(-)</button>
-    <button id="mul" onclick="multiply()">Multiplicaiton(*)</button>
-    <button id="div" onclick="divide()">Division(/)</button>
+    <button id="add" onclick="math('+')">Addition(+)</button>
+    <button id="sub" onclick="math('-')">Subtraction(-)</button>
+    <button id="mul" onclick="math('*')">Multiplication(*)</button>
+    <button id="div" onclick="math('/')">Division(/)</button>
     <br><br><br>
     <p id="result"></p>
-</fieldset>
-<br>
-
-<fieldset>
-    <h2>Advanced calculator</h2>
 </fieldset>
 
 </body>

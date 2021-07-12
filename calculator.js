@@ -1,27 +1,23 @@
-function add(){
+function math(operator) {
     let a = parseFloat(document.getElementById("firstNum").value);
     let b = parseFloat(document.getElementById("secondNum").value);
-    let c = a+b;
-    document.getElementById("result").innerHTML = "Result Addition: " + c;
-}
-
-function subtract(){
-    let a = parseFloat(document.getElementById("firstNum").value);
-    let b = parseFloat(document.getElementById("secondNum").value);
-    let c = a-b;
-    document.getElementById("result").innerHTML = "Result Substraction: " + c;
-}
-
-function multiply(){
-    let a = parseFloat(document.getElementById("firstNum").value);
-    let b = parseFloat(document.getElementById("secondNum").value);
-    let c = a*b;
-    document.getElementById("result").innerHTML = "Result Multiplication: " + c;
-}
-
-function divide(){
-    let a = parseFloat(document.getElementById("firstNum").value);
-    let b = parseFloat(document.getElementById("secondNum").value);
-    let c = a/b;
-    document.getElementById("result").innerHTML = "Result Division: " + c;
+    let c;
+    switch (operator) {
+        case '+':
+            c=a+b;
+            document.getElementById("result").innerHTML = c;
+            break;
+        case '-':
+            c=a-b;
+            document.getElementById("result").innerHTML = c;
+            break;
+        case '*':
+            c=a*b;
+            document.getElementById("result").innerHTML = c;
+            break;
+        case '/':
+            c=a/b;
+            document.getElementById("result").innerHTML = c;
+            break;
+    }
 }
