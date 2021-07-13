@@ -2,23 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Calculator</title>
+    <title>Ứng dụng máy tính đơn giản</title>
+    <link rel="stylesheet" href="mystyle.css">
 </head>
 <body>
 
+<!--<fieldset>-->
+<!--    <h2>Calculator (4-function-used)</h2>-->
+<!--    <label for="firstNum">Số thứ nhất</label> <br>-->
+<!--    <input type="number" id="firstNum"> <br><br>-->
+<!--    <label for="secondNum">Số thứ hai</label> <br>-->
+<!--    <input type="number" id="secondNum">-->
+<!--    <br><br>-->
+<!--    <button id="add" onclick="math('+')">Addition(+)</button>-->
+<!--    <button id="sub" onclick="math('-')">Subtraction(-)</button>-->
+<!--    <button id="mul" onclick="math('*')">Multiplication(*)</button>-->
+<!--    <button id="div" onclick="math('/')">Division(/)</button>-->
+<!--    <br><br><br>-->
+<!--    <p id="result"></p>-->
+<!--</fieldset>-->
+
 <fieldset>
-    <h2>Calculator (4-function-used)</h2>
-    <label for="firstNum">Số thứ nhất</label> <br>
-    <input type="number" id="firstNum"> <br><br>
-    <label for="secondNum">Số thứ hai</label> <br>
-    <input type="number" id="secondNum">
-    <br><br>
-    <button id="add" onclick="math('+')">Addition(+)</button>
-    <button id="sub" onclick="math('-')">Subtraction(-)</button>
-    <button id="mul" onclick="math('*')">Multiplication(*)</button>
-    <button id="div" onclick="math('/')">Division(/)</button>
-    <br><br><br>
-    <p id="result"></p>
+    <table>
+        <tr>
+            <td colspan="4" id="screen" class="display">
+            </td>
+        </tr>
+        <tr>
+            <td><button type="button" class="butt" id="num1" onclick="addData('1')">1</button></td>
+            <td><button type="button" class="butt" id="num2" onclick="addData('2')">2</button></td>
+            <td><button type="button" class="butt" id="num3" onclick="addData('3')">3</button></td>
+            <td><button type="button" class="butt" id="add"  onclick="addData('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="butt" id="num4" onclick="addData('4')">4</button></td>
+            <td><button type="button" class="butt" id="num5" onclick="addData('5')">5</button></td>
+            <td><button type="button" class="butt" id="num6" onclick="addData('6')">6</button></td>
+            <td><button type="button" class="butt" id="subtract" onclick="addData('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="butt" id="num7" onclick="addData('7')">7</button></td>
+            <td><button type="button" class="butt" id="num8" onclick="addData('8')">8</button></td>
+            <td><button type="button" class="butt" id="num9" onclick="addData('9')">9</button></td>
+            <td><button type="button" class="butt" id="multiply"  onclick="addData('*')">*</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="butt" id="clear" onclick="addData('C')">C</button></td>
+            <td><button type="button" class="butt" id="num0" onclick="addData('0')">0</button></td>
+            <td><button type="button" class="butt" id="equal" onclick="addData('=')">=</button></td>
+            <td><button type="button" class="butt" id="divide" onclick="addData('/')">/</button></td>
+        </tr>
+
+    </table>
 </fieldset>
 
 </body>

@@ -1,0 +1,12 @@
+.butt {
+    height: 45px;
+    width: 70px;
+}
+
+.display {
+    height: 50px;
+    font-size: x-large;
+    text-align: right;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
