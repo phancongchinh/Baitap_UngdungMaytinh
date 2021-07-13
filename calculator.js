@@ -1,7 +1,7 @@
 function math(operator) {
     let a = parseFloat(document.getElementById("firstNum").value);
     let b = parseFloat(document.getElementById("secondNum").value);
-    let c;
+    let result;
     switch (operator) {
         case '+':
             result =a+b;
